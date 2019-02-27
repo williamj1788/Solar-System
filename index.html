@@ -33,7 +33,12 @@
             <button class="button">begin</button>
         </section>
         <section class="planet" style="color: #F3FB00">
-            <h3>Sun</h3>
+            <h3
+                data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-duration="2000"
+                data-sal-easing="ease-out-bounce"
+            >Sun</h3>
             <div class="container">
                 <img src="./Images/Sun.jpg" alt="The Sun">
                 <div class="detail">
@@ -81,8 +86,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut finibus dignissim dui sed convallis. Vivamus blandit ipsum vitae pharetra interdum. Fusce luctus euismod cursus. Suspendisse lacus odio, sagittis porttitor tellus non, scelerisque elementum nulla. Ut massa tortor, rhoncus ut varius.</p>
             <button class="button" style="background-color: #f3fb00">Next</button>
         </section>
-        
-    <script>
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script type="module">
+        sal();
         function toggleNav() {
            let nav =  document.getElementsByClassName("explore-options")[0];
             nav.style.height =  nav.style.height === "450px"? "0px" : "450px";

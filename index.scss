@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto');
+@import './node_modules/sal.js/dist/sal.css';
 body,html{
     height: 6000px;
     background-image: url('./Images/Space\ Background.jpg');
-    background-size: 120% 1110px; 
+    background-size: 2000px 1110px; 
     background-position: center; 
     font-family: 'Roboto', sans-serif;
     // margin-top: -10px;
