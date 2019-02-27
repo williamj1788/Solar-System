@@ -2,8 +2,7 @@
 body,html{
     height: 100vh;
     background-image: url('./Images/Space\ Background.jpg');
-    background-repeat: repeat-y;
-    background-size: 100%;
+    background-size: cover;  
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,15 +13,21 @@ body,html{
         // width: 100%;
         background-color: rgba(0, 0, 0, 0.76);
         position: fixed;
-        padding: 0 70px;
+        padding: 0 80px;
         right: 0;
         left: 0;
         h1{
             color: white;
             font-family: 'Luckiest Guy', cursive;
         }
+        h1:hover{
+            cursor: pointer;
+        }
     }
     .explore-options{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         width: 300px;
         height: 0;
         position: fixed;
@@ -30,7 +35,18 @@ body,html{
         top: 79px;
         right: 0;
         transition: 0.5s;
-        background-color: #111; 
+        background-color: rgba(0, 0, 0, 0.76);
         overflow-y: hidden;
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            transition: color 1s;
+            font-weight: bold;
+            text-align: center;
+        }
+        a:hover{
+            color: yellow;
+        }
     }
 }
