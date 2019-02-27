@@ -1,0 +1,22 @@
+{
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "Explore the solar system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamj1788/Solar-System.git"
+  },
+  "author": "Jacquez Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamj1788/Solar-System/issues"
+  },
+  "homepage": "https://github.com/williamj1788/Solar-System#readme",
+  "dependencies": {
+    "sal.js": "^0.5.0"
+  }
+}
