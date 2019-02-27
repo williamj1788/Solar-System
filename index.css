@@ -72,10 +72,14 @@ body, html {
   color: white;
   text-align: center;
   position: relative;
-  top: 700px;
+  top: 600px;
   font-size: 55px;
   margin: 0;
   font-family: "Luckiest Guy", cursive;
+}
+.home .button {
+  position: relative;
+  top: 600px;
 }
 
 .planet {
@@ -133,20 +137,25 @@ body, html {
   margin-top: 20px;
 }
 .planet .button {
-  margin: 0 auto;
   margin-top: 30px;
+}
+
+.button {
+  margin: 0 auto;
   display: block;
   height: 75px;
   width: 150px;
   border-radius: 10px;
-  color: black;
   border: 0;
   transition: 0.5s;
   font-size: 25px;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
   font-weight: bold;
   outline: none;
 }
-.planet .button:hover {
+
+.button:hover {
   cursor: pointer;
   height: 80px;
   width: 160px;

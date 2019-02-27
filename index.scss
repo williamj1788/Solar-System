@@ -74,10 +74,14 @@ body,html{
         color: white;
         text-align: center;
         position: relative;
-        top: 700px;
+        top: 600px;
         font-size: 55px;
         margin: 0;
         font-family: 'Luckiest Guy', cursive; 
+    }
+    .button{
+        position: relative;
+        top: 600px;
     }
 }
 .planet{
@@ -135,24 +139,26 @@ body,html{
         margin-top: 20px;
     }
     .button{
-        margin: 0 auto;
         margin-top: 30px;
-        display: block;
-        height: 75px;
-        width: 150px;
-        border-radius: 10px;
-        color: rgb(0, 0, 0);
-        border: 0;
-        transition: 0.5s;
-        font-size: 25px;
-        font-weight: bold;
-        outline: none;
     }
-    .button:hover{
-        cursor: pointer;
-        height: 80px;
-        width: 160px;
-        // background-color: #c5cc00;
-        font-size: 30px;
-    }
+}
+.button{
+    margin: 0 auto;
+    display: block;
+    height: 75px;
+    width: 150px;
+    border-radius: 10px;
+    border: 0;
+    transition: 0.5s;
+    font-size: 25px;
+    font-family: 'Luckiest Guy', cursive; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    outline: none;
+}
+.button:hover{
+    cursor: pointer;
+    height: 80px;
+    width: 160px;
+    font-size: 30px;
 }
