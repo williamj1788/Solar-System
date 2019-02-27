@@ -2,6 +2,8 @@
 body, html {
   height: 6000px;
   background-image: url("./Images/Space Background.jpg");
+  background-size: 120% 1110px;
+  background-position: center;
   font-family: "Roboto", sans-serif;
 }
 
