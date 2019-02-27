@@ -4,9 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="Normalize.css">
+        <link rel="stylesheet" href="index.css">
         <title>Solar System</title>
     </head>
     <body>
-        
+        <nav class="navbar">
+            <div class="navgation">
+                <h1>The Solar System</h1>
+                <h1 onclick="toggleNav()">Explore</h1>
+            </div>
+            <div class="explore-options">
+                <a href="#">Planet</a>
+                <a href="#">Planet</a>
+                <a href="#">Planet</a>
+                <a href="#">Planet</a>
+                <a href="#">Planet</a>
+                <a href="#">Planet</a>
+            </div>
+        </nav>
+    <script>
+        function toggleNav() {
+           let nav =  document.getElementsByClassName("explore-options")[0];
+            nav.style.height =  nav.style.height === "250px"? "0px" : "250px";
+        }
+    </script>
     </body>
 </html>

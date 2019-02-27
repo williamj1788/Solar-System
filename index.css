@@ -1,3 +1,35 @@
-body,html{
-    height: 100vh;
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto");
+body, html {
+  height: 100vh;
+  background-image: url("./Images/Space Background.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  font-family: "Roboto", sans-serif;
 }
+
+.navbar .navgation {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.76);
+  position: fixed;
+  padding: 0 70px;
+  right: 0;
+  left: 0;
+}
+.navbar .navgation h1 {
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+}
+.navbar .explore-options {
+  width: 300px;
+  height: 0;
+  position: fixed;
+  z-index: 1;
+  top: 79px;
+  right: 0;
+  transition: 0.5s;
+  background-color: #111;
+  overflow-y: hidden;
+}
+
+/*# sourceMappingURL=index.css.map */
