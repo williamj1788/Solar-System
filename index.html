@@ -1316,6 +1316,7 @@
             </section>
     <script src="./node_modules/sal.js/dist/sal.js"></script>
     <script type="module">
+        import jump from './node_modules/jump.js/dist/jump.module.js'
         sal();
         function toggleExplore() {
            let nav =  document.getElementsByClassName("explore-options")[0];
@@ -1323,6 +1324,13 @@
         }
         let explore = document.getElementById('explore');
         explore.addEventListener('click',toggleExplore);
+        let planets = document.getElementsByClassName('planet');
+        // console.log(planets[0].id);
+        for(let i = 1; i < 11; i++){
+            let button = document.getElementById('button' + i);
+            button.addEventListener('click', () => {jump(`#${planets[i].id}`)})
+        }
+        
     </script>
     </body>
 </html>
