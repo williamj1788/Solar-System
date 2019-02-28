@@ -72,64 +72,64 @@ body, html {
 .navbar .explore-options a:hover {
   color: yellow;
 }
-.navbar .explore-options #sun {
+.navbar .explore-options #sun-option {
   color: #F3FB00;
 }
-.navbar .explore-options #sun:hover {
+.navbar .explore-options #sun-option:hover {
   color: #b6bd01;
 }
-.navbar .explore-options #mercury {
+.navbar .explore-options #mercury-option {
   color: #FB9F00;
 }
-.navbar .explore-options #mercury:hover {
+.navbar .explore-options #mercury-option:hover {
   color: #a56800;
 }
-.navbar .explore-options #venus {
+.navbar .explore-options #venus-option {
   color: #917639;
 }
-.navbar .explore-options #venus:hover {
+.navbar .explore-options #venus-option:hover {
   color: #635126;
 }
-.navbar .explore-options #earth {
+.navbar .explore-options #earth-option {
   color: #00ECFE;
 }
-.navbar .explore-options #earth:hover {
+.navbar .explore-options #earth-option:hover {
   color: #00909b;
 }
-.navbar .explore-options #mars {
+.navbar .explore-options #mars-option {
   color: #FE0000;
 }
-.navbar .explore-options #mars:hover {
+.navbar .explore-options #mars-option:hover {
   color: #940000;
 }
-.navbar .explore-options #jupiter {
+.navbar .explore-options #jupiter-option {
   color: #FE6E00;
 }
-.navbar .explore-options #jupiter:hover {
+.navbar .explore-options #jupiter-option:hover {
   color: #994200;
 }
-.navbar .explore-options #saturn {
+.navbar .explore-options #saturn-option {
   color: #7FFE00;
 }
-.navbar .explore-options #saturn:hover {
+.navbar .explore-options #saturn-option:hover {
   color: #60be01;
 }
-.navbar .explore-options #uranus {
+.navbar .explore-options #uranus-option {
   color: #289EC4;
 }
-.navbar .explore-options #uranus:hover {
+.navbar .explore-options #uranus-option:hover {
   color: #196680;
 }
-.navbar .explore-options #neptune {
+.navbar .explore-options #neptune-option {
   color: #0152FF;
 }
-.navbar .explore-options #neptune:hover {
+.navbar .explore-options #neptune-option:hover {
   color: #002c8b;
 }
-.navbar .explore-options #pluto {
+.navbar .explore-options #pluto-option {
   color: #ffffff;
 }
-.navbar .explore-options #pluto:hover {
+.navbar .explore-options #pluto-option:hover {
   color: #c9c9c9;
 }
 

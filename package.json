@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/williamj1788/Solar-System#readme",
   "dependencies": {
+    "jump.js": "^1.0.2",
     "sal.js": "^0.5.0"
   }
 }
