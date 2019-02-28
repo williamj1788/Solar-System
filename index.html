@@ -12,19 +12,19 @@
         <nav class="navbar">
             <div class="navgation">
                 <h1>The Solar System</h1>
-                <h1 onclick="toggleNav()">Explore</h1>
+                <h1 id="explore">Explore</h1>
             </div>
             <div class="explore-options">
-                <a href="#">Sun</a> 
-                <a href="#">Mercury</a> 
-                <a href="#">Venus</a> 
-                <a href="#">Earth</a> 
-                <a href="#">Mars</a> 
-                <a href="#">Jupiter</a>
-                <a href="#">Saturn</a>
-                <a href="#">Uranus</a>
-                <a href="#">Neptune</a>
-                <a href="#">Pluto</a>
+                <a href="#" id="sun">Sun</a> 
+                <a href="#" id="mercury">Mercury</a> 
+                <a href="#" id="venus">Venus</a> 
+                <a href="#" id="earth">Earth</a> 
+                <a href="#" id="mars">Mars</a> 
+                <a href="#" id="jupiter">Jupiter</a>
+                <a href="#" id="saturn">Saturn</a>
+                <a href="#" id="uranus">Uranus</a>
+                <a href="#" id="neptune">Neptune</a>
+                <a href="#" id="pluto">Pluto</a>
             </div>
         </nav>
         <section class="home">
@@ -1307,13 +1307,22 @@
                 data-sal-duration="1500"
                 >Next</button>
             </section>
+            <section class="footer">
+                <h4>Thanks for coming</h4>
+                <p>Check this project out on Github</p>
+                <a href="https://github.com/williamj1788/Solar-System"><img src="./Images/GitHub.png" alt="GitHub Icon"></a>
+                <p>Or hit me up personally</p>
+                <p id="email">jacquezwilliams115@gmail.com</p>
+            </section>
     <script src="./node_modules/sal.js/dist/sal.js"></script>
     <script type="module">
         sal();
-        function toggleNav() {
+        function toggleExplore() {
            let nav =  document.getElementsByClassName("explore-options")[0];
             nav.style.height =  nav.style.height === "450px"? "0px" : "450px";
         }
+        let explore = document.getElementById('explore');
+        explore.addEventListener('click',toggleExplore);
     </script>
     </body>
 </html>

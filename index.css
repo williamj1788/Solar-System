@@ -8,6 +8,28 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
+.button {
+  margin: 0 auto;
+  display: block;
+  height: 75px;
+  width: 150px;
+  border-radius: 10px;
+  border: 0;
+  transition: 0.5s;
+  font-size: 25px;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 2px;
+  font-weight: bold;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  height: 80px;
+  width: 160px;
+  font-size: 30px;
+}
+
 .navbar .navgation {
   display: flex;
   justify-content: space-between;
@@ -43,12 +65,72 @@ body, html {
   text-decoration: none;
   font-size: 30px;
   color: white;
-  transition: color 1s;
+  transition: color 0.5s;
   font-weight: bold;
   text-align: center;
 }
 .navbar .explore-options a:hover {
   color: yellow;
+}
+.navbar .explore-options #sun {
+  color: #F3FB00;
+}
+.navbar .explore-options #sun:hover {
+  color: #b6bd01;
+}
+.navbar .explore-options #mercury {
+  color: #FB9F00;
+}
+.navbar .explore-options #mercury:hover {
+  color: #a56800;
+}
+.navbar .explore-options #venus {
+  color: #917639;
+}
+.navbar .explore-options #venus:hover {
+  color: #635126;
+}
+.navbar .explore-options #earth {
+  color: #00ECFE;
+}
+.navbar .explore-options #earth:hover {
+  color: #00909b;
+}
+.navbar .explore-options #mars {
+  color: #FE0000;
+}
+.navbar .explore-options #mars:hover {
+  color: #940000;
+}
+.navbar .explore-options #jupiter {
+  color: #FE6E00;
+}
+.navbar .explore-options #jupiter:hover {
+  color: #994200;
+}
+.navbar .explore-options #saturn {
+  color: #7FFE00;
+}
+.navbar .explore-options #saturn:hover {
+  color: #60be01;
+}
+.navbar .explore-options #uranus {
+  color: #289EC4;
+}
+.navbar .explore-options #uranus:hover {
+  color: #196680;
+}
+.navbar .explore-options #neptune {
+  color: #0152FF;
+}
+.navbar .explore-options #neptune:hover {
+  color: #002c8b;
+}
+.navbar .explore-options #pluto {
+  color: #ffffff;
+}
+.navbar .explore-options #pluto:hover {
+  color: #c9c9c9;
 }
 
 .home {
@@ -146,26 +228,35 @@ body, html {
   margin-top: 30px;
 }
 
-.button {
-  margin: 0 auto;
-  display: block;
-  height: 75px;
-  width: 150px;
-  border-radius: 10px;
-  border: 0;
-  transition: 0.5s;
-  font-size: 25px;
-  font-family: "Luckiest Guy", cursive;
-  letter-spacing: 2px;
-  font-weight: bold;
-  outline: none;
+.footer {
+  margin: 300px 0;
 }
-
-.button:hover {
-  cursor: pointer;
-  height: 80px;
-  width: 160px;
-  font-size: 30px;
+.footer h4 {
+  font-size: 103px;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.footer p {
+  font-size: 29px;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  text-align: center;
+}
+.footer a {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+.footer a img {
+  width: 50px;
+  height: 50px;
+}
+.footer #email {
+  font-family: initial;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.css.map */
