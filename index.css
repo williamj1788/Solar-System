@@ -67,6 +67,7 @@ body, html {
 }
 .navbar .explore-options a {
   text-decoration: none;
+  cursor: pointer;
   font-size: 30px;
   color: white;
   transition: color 0.5s;
