@@ -43,6 +43,10 @@ body, html {
 .navbar .navgation h1 {
   color: white;
   font-family: "Luckiest Guy", cursive;
+  margin: 10px 0;
+}
+.navbar .navgation #nav-title {
+  margin: 10px 0;
 }
 .navbar .navgation h1:hover {
   cursor: pointer;
@@ -55,7 +59,7 @@ body, html {
   height: 0;
   position: fixed;
   z-index: 1;
-  top: 79px;
+  top: 49px;
   right: 0;
   transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.76);

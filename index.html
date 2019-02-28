@@ -11,7 +11,7 @@
     <body>
         <nav class="navbar">
             <div class="navgation">
-                <h1>The Solar System</h1>
+                <h1 id="nav-title">The Solar System</h1>
                 <h1 id="explore">Explore</h1>
             </div>
             <div class="explore-options">
@@ -1324,11 +1324,21 @@
         }
         let explore = document.getElementById('explore');
         explore.addEventListener('click',toggleExplore);
-        let planets = document.getElementsByClassName('planet');
-        // console.log(planets[0].id);
-        for(let i = 1; i < 11; i++){
-            let button = document.getElementById('button' + i);
-            button.addEventListener('click', () => {jump(`#${planets[i].id}`)})
+        
+        let sections = document.getElementsByTagName('section');
+        for(let i = 0; i <sections.length; i++){
+            let button = sections[i].getElementsByTagName('button')[0];
+            if(button){
+                if(i === sections.length - 2){
+                    button.addEventListener('click', () => {jump(sections[i+1],{
+                        offset: -250,
+                    })})
+                }else{
+                    button.addEventListener('click', () => {jump(sections[i+1],{
+                        offset: -60,
+                    })})
+                }
+            }
         }
         
     </script>

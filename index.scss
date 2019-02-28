@@ -6,7 +6,6 @@ body,html{
     background-size: 2000px 1110px; 
     background-position: center; 
     font-family: 'Roboto', sans-serif;
-    // margin-top: -10px;
 }
 .button{
     margin: 0 auto;
@@ -32,7 +31,6 @@ body,html{
     .navgation{
         display: flex;
         justify-content: space-between;
-        // width: 100%;
         background-color: rgba(0, 0, 0, 0.76);
         position: fixed;
         padding: 0 80px;
@@ -42,6 +40,10 @@ body,html{
         h1{
             color: white;
             font-family: 'Luckiest Guy', cursive;
+            margin: 10px 0;
+        }
+        #nav-title{
+            margin: 10px 0;
         }
         h1:hover{
             cursor: pointer;
@@ -55,7 +57,7 @@ body,html{
         height: 0;
         position: fixed;
         z-index: 1;
-        top: 79px;
+        top: 49px;
         right: 0;
         transition: 0.5s;
         background-color: rgba(0, 0, 0, 0.76);
