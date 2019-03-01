@@ -5,6 +5,7 @@ If you want to edit or view this project, just follow these instructions
 ```
 git clone https://github.com/williamj1788/Solar-System
 cd Solar-System
+npm install
 npm start
 ```
 The project can be seen on localhost 8080
