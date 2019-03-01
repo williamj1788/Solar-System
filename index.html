@@ -1345,20 +1345,25 @@
         import jump from './node_modules/jump.js/dist/jump.module.js';
         import {easeInOutQuad} from './node_modules/ez.js/ez.js';
         sal();
+
         function toggleExplore() {
            let nav =  document.getElementsByClassName("explore-options")[0];
             nav.style.height =  nav.style.height === "450px"? "0px" : "450px";
         }
+
         let explore = document.getElementById('explore');
         explore.addEventListener('click',toggleExplore);
 
         let sections = document.getElementsByTagName('section');
         let options = document.getElementsByTagName('nav')[0].getElementsByClassName('explore-options')[0];
 
+        // Loops through each section and adds jump to each button in the section and each explore option in navbar
         for(let i = 0, j = 1; i <sections.length; i++,j++){
             let button = sections[i].getElementsByTagName('button')[0];
             let option = options.getElementsByTagName('a')[i];
-            let speed = 1.2;
+
+            let speed = 1.2; // how fast a jump is allowed to move.
+
             if(option){
                 option.addEventListener('click', () => {jump(sections[j], {
                     offset: -60,
