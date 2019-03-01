@@ -32,7 +32,7 @@
             <p class="begin">So Lets Explore It</p>
             <button class="button">begin</button>
         </section>
-        <section class="planet" id="sun" style="color: #F3FB00; margin-top: 300px;">
+        <section class="planet" id="sun" style="color: #F3FB00; margin-top: 200px;">
             <h3
             data-sal="slide-up"
             data-sal-delay="100"
@@ -110,7 +110,7 @@
             >Next</button>
         </section>
         <!-- Mercury -->
-        <section class="planet" id="mercury" style="color: #FB9F00; margin-top: 300px;">
+        <section class="planet" id="mercury" style="color: #FB9F00; margin-top: 108px;">
             <h3
             data-sal="slide-up"
             data-sal-delay="100"
@@ -227,7 +227,7 @@
             >Next</button>
         </section>
         <!--Venus -->
-        <section class="planet" id="venus" style="color: #d6af55; margin-top: 300px;">
+        <section class="planet" id="venus" style="color: #d6af55; margin-top: 93px;">
             <h3
             data-sal="slide-up"
             data-sal-delay="100"
@@ -360,7 +360,7 @@
             >Next</button>
         </section>
         <!-- Earth -->
-        <section class="planet" id="earth" style="color: #00ECFE; margin-top: 300px;">
+        <section class="planet" id="earth" style="color: #00ECFE; margin-top: 186px;">
                 <h3
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -505,7 +505,7 @@
                 >Next</button>
             </section>
             <!-- Mars -->
-            <section class="planet" id="mars" style="color: #FE0000; margin-top: 300px;">
+            <section class="planet" id="mars" style="color: #FE0000; margin-top: 249px;">
                 <h3
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -649,7 +649,7 @@
                 >Next</button>
             </section>
             <!-- Jupiter -->
-            <section class="planet" id="jupiter" style="color: #FE6E00; margin-top: 300px;">
+            <section class="planet" id="jupiter" style="color: #FE6E00; margin-top: 1213px;">
                 <h3
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -781,7 +781,7 @@
                 >Next</button>
             </section>
             <!-- Saturn -->
-            <section class="planet" id="saturn" style="color: #7FFE00; margin-top: 300px;">
+            <section class="planet" id="saturn" style="color: #7FFE00; margin-top: 1460px;">
                 <h3
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -914,7 +914,7 @@
                 >Next</button>
             </section>
             <!-- Uranus -->
-            <section class="planet" id="uranus" style="color: #289EC4; margin-top: 300px;">
+            <section class="planet" id="uranus" style="color: #289EC4; margin-top: 3892px;">
                 <h3
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -1059,7 +1059,7 @@
                 >Next</button>
             </section>
             <!-- Neptune -->
-            <section class="planet" id="neptune" style="color: #0152FF; margin-top: 300px;">
+            <section class="planet" id="neptune" style="color: #0152FF; margin-top: 4325px;">
                 <h3
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -1203,7 +1203,7 @@
                 >Next</button>
             </section>
             <!-- Pluto -->
-            <section class="planet" id="pluto" style="color: #e6e6e6; margin-top: 300px;">
+            <section class="planet" id="pluto" style="color: #e6e6e6; margin-top: 6685px;">
                 <h3
                 data-sal="slide-up"
                 data-sal-delay="100"
@@ -1342,7 +1342,8 @@
             </section>
     <script src="./node_modules/sal.js/dist/sal.js"></script>
     <script type="module">
-        import jump from './node_modules/jump.js/dist/jump.module.js'
+        import jump from './node_modules/jump.js/dist/jump.module.js';
+        import {easeInOutQuad} from './node_modules/ez.js/ez.js';
         sal();
         function toggleExplore() {
            let nav =  document.getElementsByClassName("explore-options")[0];
@@ -1357,19 +1358,26 @@
         for(let i = 0, j = 1; i <sections.length; i++,j++){
             let button = sections[i].getElementsByTagName('button')[0];
             let option = options.getElementsByTagName('a')[i];
+            let speed = 1.2;
             if(option){
                 option.addEventListener('click', () => {jump(sections[j], {
-                    offset: -60
+                    offset: -60,
+                    duration: distance => { return distance/speed},
+                    easing: easeInOutQuad
                 })})
             }
             if(button){
                 if(i === sections.length - 2){
                     button.addEventListener('click', () => {jump(sections[i+1],{
-                        offset: -250
+                        offset: -250,
+                        duration: distance => {return distance/speed},
+                        easing: easeInOutQuad
                     })})
                 }else{
                     button.addEventListener('click', () => {jump(sections[i+1],{
-                        offset: -60
+                        offset: -60,
+                        duration: distance => { return distance/speed},
+                        easing: easeInOutQuad
                     })})
                 }
             }

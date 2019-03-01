@@ -2,8 +2,9 @@
 @import './node_modules/sal.js/dist/sal.css';
 body,html{
     height: 6000px;
-    background-image: url('./Images/Space\ Background.jpg');
-    background-size: 2000px 1110px; 
+    background-image: url('./Images/blackSpace.png');
+    background-size: 2000px 1110px;
+    background-repeat: repeat-y; 
     background-position: center; 
     font-family: 'Roboto', sans-serif;
 }
@@ -33,7 +34,7 @@ body,html{
         justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.76);
         position: fixed;
-        padding: 0 80px;
+        padding: 0 10%;
         right: 0;
         left: 0;
         z-index: 5;
@@ -58,7 +59,7 @@ body,html{
         position: fixed;
         z-index: 1;
         top: 49px;
-        right: 0;
+        right: 5%;
         transition: 0.5s;
         background-color: rgba(0, 0, 0, 0.76);
         overflow-y: hidden;
@@ -170,7 +171,8 @@ body,html{
 .planet{
     margin: 0 auto;
     display: block;
-    width: 1415px;
+    max-width: 1415px;
+    width: 100%;
     h3{
         color: inherit;
         font-size: 80px;
@@ -183,12 +185,16 @@ body,html{
         display: flex;
         justify-content: space-around;
         height: 400px;
+        min-height: fit-content;
         img{
             width: 350px;
             height: 350px;
+            flex-grow: 0;
+            flex-shrink: 1;
         }
         .detail{
             width: 700px;
+            min-height: fit-content;
             height: 400px;
             .info{
                 width: 100%;
@@ -260,5 +266,40 @@ body,html{
         font-family: initial;
         font-size: 22px;
         font-weight: bold;
+    }
+}
+@media (max-width: 515px){
+    .navbar{
+        .explore-options{
+         top: 90px;
+        }
+    }
+    .home{
+        height: 1100px;
+    }
+}
+@media(max-width: 1000px){
+    .planet{
+        .container{
+            .detail{
+                .info{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 900px){
+    .planet{
+        .container{
+            flex-direction: column;
+            img{
+                margin: 0 auto;
+            }
+            .detail{
+                margin: 0 auto;
+                width: fit-content;
+            }
+        }
     }
 }
