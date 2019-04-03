@@ -1368,7 +1368,7 @@
                 option.addEventListener('click', () => {jump(sections[j], {
                     offset: -60,
                     duration: distance => { return distance/speed},
-                    easing: easeInOutQuad
+                    easing: easeInOutQuad,
                 })})
             }
             if(button){
@@ -1376,21 +1376,17 @@
                     button.addEventListener('click', () => {jump(sections[i+1],{
                         offset: -250,
                         duration: distance => {return distance/speed},
-                        easing: easeInOutQuad
+                        easing: easeInOutQuad,
                     })})
                 }else{
                     button.addEventListener('click', () => {jump(sections[i+1],{
                         offset: -60,
                         duration: distance => { return distance/speed},
-                        easing: easeInOutQuad
+                        easing: easeInOutQuad,
                     })})
                 }
             }
         }
-
-
-
-        
     </script>
     </body>
 </html>
